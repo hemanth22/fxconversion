@@ -1,5 +1,5 @@
 from forex_python.converter import CurrencyRates
-rom forex_python.converter import CurrencyCodes
+from forex_python.converter import CurrencyCodes
 c = CurrencyRates()
 s = CurrencyCodes()
 a = c.get_rate('INR','SGD')
