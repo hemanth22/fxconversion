@@ -36,3 +36,6 @@ jobs:
       
     - name: Test single python
       run: python3 fxjobtwo.py
+
+    - name: Test single python
+      run: python3 fxjobthree.py
