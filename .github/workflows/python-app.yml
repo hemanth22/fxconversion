@@ -30,3 +30,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with python code
       run: python3 Cucun.py
+      
+    - name: Test single python
+      run: python3 fxjob.py
