@@ -3,7 +3,7 @@ from forex_python.converter import CurrencyCodes
 import json
 c = CurrencyRates()
 s = CurrencyCodes()
-abc = c.get_rates('INR')
+abc = c.get_rates('EUR')
 dxg = json.dumps(abc,sort_keys=True, indent=4)
 #print(abc)
 for i,z in abc.items():
