@@ -42,3 +42,6 @@ jobs:
 
     - name: Test rates check python
       run: python3 fxratecheck.py
+      
+    - name: Top currency rates python
+      run: python3 CostlyCurrency.py
