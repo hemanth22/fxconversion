@@ -11,6 +11,8 @@ cuabc8="EUR"
 cuabc9="CHF"
 cuabc0="USD"
 
+EX_API_KEY = "EX_API_KEY"
+
 def xcur(abc):
     # Where USD is the base currency you want to use
     url = 'https://v6.exchangerate-api.com/v6/'+EX_API_KEY+'/pair/'+abc+'/INR'
