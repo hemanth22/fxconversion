@@ -45,3 +45,5 @@ jobs:
       
     - name: Top currency rates python
       run: python3 CostlyCurrency.py
+      env:
+        EX_API_KEY: ${{ secrets.EX_API_KEY }}
