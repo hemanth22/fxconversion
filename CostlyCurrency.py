@@ -1,4 +1,5 @@
 import requests
+import os
 
 cuabc1="KWD"
 cuabc2="BHD"
@@ -11,7 +12,7 @@ cuabc8="EUR"
 cuabc9="CHF"
 cuabc0="USD"
 
-EX_API_KEY = "EX_API_KEY"
+EX_API_KEY = os.environ.get('EX_API_KEY')
 
 def xcur(abc):
     # Where USD is the base currency you want to use
