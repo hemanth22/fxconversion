@@ -1,11 +1,35 @@
-from forex_python.converter import CurrencyRates
-from forex_python.converter import CurrencyCodes
-c = CurrencyRates()
+import requests
 
-s = CurrencyCodes()
-a = c.get_rate('KWD','INR')
-print('Top 1 : {0} {1}'.format((a),s.get_symbol('INR')))
-f = c.get_rate('BHD','INR')
-print('Top 2 : {0} {1}'.format((f),s.get_symbol('INR')))
-fsa = c.get_rate('OMR','INR')
-print('Top 3 : {0} {1}'.format((fsa),s.get_symbol('INR')))
+cuabc1="KWD"
+cuabc2="BHD"
+cuabc3="OMR"
+cuabc4="JOD"
+cuabc5="GIP"
+cuabc6="GBP"
+cuabc7="KYD"
+cuabc8="EUR"
+cuabc9="CHF"
+cuabc0="USD"
+
+def xcur(abc):
+    # Where USD is the base currency you want to use
+    url = 'https://v6.exchangerate-api.com/v6/'+EX_API_KEY+'/pair/'+abc+'/INR'
+    # Making our request
+    response = requests.get(url)
+    #print(response)
+    data = response.json()
+    print("======================================================")
+    #print(data)
+    for i,z in data.items():
+        print(str(i),':',str(z))
+
+xcur(cuabc1)
+xcur(cuabc2)
+xcur(cuabc3)
+xcur(cuabc4)
+xcur(cuabc5)
+xcur(cuabc6)
+xcur(cuabc7)
+xcur(cuabc8)
+xcur(cuabc9)
+xcur(cuabc0)
