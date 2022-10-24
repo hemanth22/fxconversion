@@ -52,3 +52,13 @@ jobs:
       run: python3 fxchang.py
       env:
         EX_API_KEY: ${{ secrets.EX_API_KEY }}
+
+    - name: G10 Currency pairs
+      run: python3 g10.py
+      env:
+        EX_API_KEY: ${{ secrets.EX_API_KEY }}
+
+    - name: G10 Currency pairs base USD
+      run: python3 baseusd_g10.py
+      env:
+        EX_API_KEY: ${{ secrets.EX_API_KEY }}
