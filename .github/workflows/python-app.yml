@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests tabulate Flask setuptools urllib3 Jinja2 forex-python
+        pip install requests tabulate Flask setuptools urllib3 Jinja2 forex-python redis
         pip --version
         python --version
         python3 --version
@@ -60,5 +60,10 @@ jobs:
 
     - name: G10 Currency pairs base USD
       run: python3 baseusd_g10.py
+      env:
+        EX_API_KEY: ${{ secrets.EX_API_KEY }}
+
+    - name: All Currencies
+      run: python3 fxrates_All.py
       env:
         EX_API_KEY: ${{ secrets.EX_API_KEY }}
