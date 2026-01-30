@@ -1,2 +1,2 @@
 # fxconversion
-checkout
+forex-checkout
