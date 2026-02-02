@@ -5,7 +5,7 @@ import redis
 
 def fetch_and_transform_rates(api_key):
     # API Endpoint
-    url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/USD"
+    url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/EUR"
     
     try:
         response = requests.get(url)
