@@ -67,3 +67,9 @@ jobs:
       run: python3 fxrates_All.py
       env:
         EX_API_KEY: ${{ secrets.EX_API_KEY }}
+
+    - name: All Currencies
+      run: python3 fxrates_AllEUR.py
+      env:
+        EX_API_KEY: ${{ secrets.EX_API_KEY }}
+
