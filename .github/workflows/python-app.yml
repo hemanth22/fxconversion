@@ -73,3 +73,5 @@ jobs:
       env:
         EX_API_KEY: ${{ secrets.EX_API_KEY }}
 
+    - name: FX Tenro rates
+      run: python3 fx_tenor.py
